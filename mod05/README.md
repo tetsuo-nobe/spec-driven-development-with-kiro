@@ -18,7 +18,7 @@ Kiro IDE に MCP サーバーを設定して使用します。
 1. Kiro のチャット欄に以下を入力して送信します:
 
 ```
-ワークスペースの MCP 設定ファイル（.kiro/settings/mcp.json）を作成して、以下の MCP サーバーを追加してください:
+ワークスペースの MCP 設定ファイル（.kiro/settings/mcp.json）を編集して、以下の MCP サーバーを追加してください:
 
 {
   "mcpServers": {
