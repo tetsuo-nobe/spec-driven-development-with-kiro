@@ -1,10 +1,20 @@
 ﻿# BugFix workflow 体験キット
 
+---
+## 概要
+
 Kiro の **Bug Fix ワークフロー**（Spec の一種。バグ修正を「根本原因の分析 → 修正設計 → 実装」の 3 段階で進める機能）を体験するための練習用プロジェクト集です。
 
 各アプリには意図的にバグが仕込まれています。すべてビルド不要で、`index.html` をブラウザで開くだけで動きます。
 
 > このドキュメントは、各アプリ（`todo-app/` `calculator/` `quiz/`）の内容を集約したものです。各アプリの詳細（起動方法・バグの再現手順・依頼の例）まで、このファイルだけで確認できます。修正結果の参考例は [`SOLUTION.md`](./SOLUTION.md) にまとめてあります。
+
+**所要時間**: 約20〜60分
+
+**前提条件**:
+- ラボ 1 の環境で Kiro にサインが完了していること
+
+---
 
 ## アプリの起動方法（3 アプリ共通）
 
@@ -23,9 +33,28 @@ Kiro の **Bug Fix ワークフロー**（Spec の一種。バグ修正を「根
 
 ---
 
-## 1. ToDo リスト（todo-app）
+## 準備
+
+1. ラボ環境のデスクトップで `bugfix-ws` フォルダを作成します。
+1. Kiro の「**File**」-「**Open Folder**」メニューから作成した `bugfix-ws` フォルダを開きます。
+1. Kiro のターミナルが開いていない場合は、「**View**」-「**Terminal**」で開きます。
+1. ターミナルで下記のコマンドを実行します。
+    - ```
+      git clone https://github.com/tetsuo-nobe/spec-driven-development-with-kiro.git
+      ```
+
+---
+
+## タスク 1. ToDo リスト（todo-app）のバグ修正
 
 タスクの追加・完了切り替え・削除・localStorage への保存ができる ToDo アプリです。**意図的に 5 つのバグ**（うち 1 つは再現条件がシビアな上級バグ）が仕込まれています。
+
+### todo-app の実行方法
+
+1. Kiro の左側のエクスプローラーで下記のファイルを右クリックして 「**Reveal in File Exploerr**」を選択します。
+    - `spec-driven-development-with-kiro\mod04\todo-app\index.html`
+1. ファイルエクスプローラーで **index.html** をダブルクリックします。
+    - 開くアプリケーションの選択ダイアログが表示された場合は **Microsoft Edge** を選択します。
 
 ### 正しい仕様
 
@@ -102,9 +131,16 @@ Kiro の **Bug Fix ワークフロー**（Spec の一種。バグ修正を「根
 
 ---
 
-## 2. 電卓（calculator）
+## タスク 2. 電卓（calculator）のバグ修正
 
 数字ボタンと `＋ − × ÷` で四則演算ができる電卓です。**意図的に 4 つのバグ** が仕込まれています。
+
+### calculator の実行方法
+
+1. Kiro の左側のエクスプローラーで下記のファイルを右クリックして 「**Reveal in File Exploerr**」を選択します。
+    - `spec-driven-development-with-kiro\mod04\calculator\index.html`
+1. ファイルエクスプローラーで **index.html** をダブルクリックします。
+    - 開くアプリケーションの選択ダイアログが表示された場合は **Microsoft Edge** を選択します。
 
 ### 正しい仕様
 
@@ -169,9 +205,16 @@ Kiro の **Bug Fix ワークフロー**（Spec の一種。バグ修正を「根
 
 ---
 
-## 3. ミニクイズ（quiz）
+## タスク 3. ミニクイズ（quiz）のバグ修正
 
 全 4 問のクイズを 1 問ずつ出題し、スコアと正答率を表示するアプリです。**意図的に 4 つのバグ** が仕込まれています。
+
+### quiz の実行方法
+
+1. Kiro の左側のエクスプローラーで下記のファイルを右クリックして 「**Reveal in File Exploerr**」を選択します。
+    - `spec-driven-development-with-kiro\mod04\quiz\index.html`
+1. ファイルエクスプローラーで **index.html** をダブルクリックします。
+    - 開くアプリケーションの選択ダイアログが表示された場合は **Microsoft Edge** を選択します。
 
 ### 正しい仕様
 
