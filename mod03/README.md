@@ -33,7 +33,7 @@ Kiro IDE の基本的な機能を一通り体験するハンズオンです。�
 1. デスクトップに空のフォルダを作成します（例: `kiro-basic`）
     - デスクトップをクリック、右クリックから新しいフォルダ作成を指定します。
 1. Kiro のメニューで、「**File**」-「**Open Folder...**」で作成したフォルダを選択して開きます
-    -「**Do you trust the authors of the files in this folder?**」のダイアログが表示された場合はチェックボックスをチェックして「**Yes, ...**」をクリックします
+     -「**Do you trust the authors of the files in this folder?**」のダイアログが表示された場合はチェックボックスをチェックして「**Yes, ...**」をクリックします
 
 ---
 
