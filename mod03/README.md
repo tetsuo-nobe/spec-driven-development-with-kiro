@@ -107,7 +107,7 @@ description: 日本語での応答・ドキュメント作成・コードコメ�
 
 ```
 
-Kiro の左側で Kiro のアイコンをクリックして、「AGENT STEERING & SKILLS」の「Global」の下に `messages-in-japanese.md` が存在することを確認します。
+Kiro の左側で Kiro のアイコンをクリックして、「**AGENT STEERING & SKILLS**」の「**Global**」の下に `messages-in-japanese.md` が存在することを確認します。
 
 > 💡 **ポイント**: これ以降、Kiro は日本語でコメントを書き、日本語で応答してくれるようになります。ステアリングはプロジェクト単位で設定でき、チーム全員で共有できます。
 
