@@ -12,6 +12,7 @@ Kiro IDE に Agent フックと Agent Skills を設定して使用します。
 ---
 ## 準備
 
+1. Kiro で新しい Vibe (Default) セッションを開きます。
 1. まず、docstring（JSDoc）がない Node.js ファイルを作成します。チャット欄に以下を入力します:
 
 ```
