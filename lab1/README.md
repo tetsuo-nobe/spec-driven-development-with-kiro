@@ -116,7 +116,7 @@
 
 - Kiro IDE がデータにアクセスすることを許可するよう求められたら、<span style="ssb_orange_oval">Allow access</span> を選択します。
 
-- ブラウザに “You can close this window” (ウィンドウを閉じることができます) というメッセージが表示されます。 ブラウザを終了します。
+- ブラウザに “You can close this window” (ウィンドウを閉じることができます) というメッセージが表示されます。 ブラウザを最小化表示します。
 
 +++
 
