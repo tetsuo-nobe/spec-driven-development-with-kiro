@@ -97,40 +97,6 @@
 
    <i aria-hidden="true" class="fas fa-exclamation-triangle" style="color:#DF2A5D"></i> **警告:** 既に AWS ビルダー ID をお持ちの場合は、ログインして使用できます。ただし、既存の AWS ビルダー ID で Kiro を以前に使用したことがある場合は、利用可能な Kiro クレジットの一部またはすべてを使用している可能性があります。その場合、ラボ中にクレジットが不足する可能性があります。**このような状況が当てはまる場合は、新しい (2 つ目の) AWS ビルダー ID を作成することを強くお勧めします。** 作成方法は以下のとおりです。
 
-   <i aria-hidden="true" class="fas fa-exclamation-circle" style="color:#7C5AED"></i> **注意:** このラボのこの部分を完了するための手順は、既存の **AWS ビルダー ID** を持っているかどうか、また使用するかどうかによって異なります。該当する手順グループをクリックし、対応するメニューを展開して手順を表示してください。
-
-+++AWS ビルダー ID を新規作成するための詳細を表示するには、こちらをクリックしてください。
-
-- AWS ビルダー ID がまだ関連付けられていない、アクセス可能な E メールアドレスを入力します。
-
-- <span style="ssb_orange_oval">Continue</span> をクリックします。
-
-- **Name**: **任意の名前を入力します**。
-
-- <span style="ssb_orange_oval">Next</span> をクリックします。
-
-- [**Verify your email**] ページで、以下を設定します。
-
-   - **Verification code**: **E メールアドレスに送信された認証コードを入力します**。
-
-   **注**: E メールの受信には 1～2 分かかることがあります。
-
-   - <span style="ssb_orange_oval">Continue</span> をクリックします。
-
-- [**Create your password**] ページで、以下を設定します。
-
-   - **Password**: 任意のパスワードを入力します。
-
-   - **Confirm password**: 同じパスワードをもう一度入力します。
-
-   - <span style="ssb_orange_oval">Continue</span> をクリックします。
-
-   - パスワードを保存するように求められたら、[**Not now**] を選択します。
-
-   - Kiro IDE がデータにアクセスすることを許可するよう求められたら、<span style="ssb_orange_oval">Allow access</span> を選択します。
-
-   - ブラウザに “You can close this window” (ウィンドウを閉じることができます) というメッセージが表示されます。 ブラウザを終了します。
-+++
 
 +++既存の AWS ビルダー ID でログインするための詳細を表示するには、こちらをクリックしてください。
 
