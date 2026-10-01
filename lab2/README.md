@@ -33,7 +33,7 @@
 
 次の図は、事前にデプロイされたマイクロブログアプリケーションのアーキテクチャを示しています。
 
-<center>![マイクロブログアプリケーションのアーキテクチャ図](images/micro-blogging-app-diagram.png)</center>
+![マイクロブログアプリケーションのアーキテクチャ図](images/micro-blogging-app-diagram.png)
 
 **画像の説明: マイクロブログアプリケーションのアーキテクチャを示す図。ユーザーは CloudFront と S3 経由で React フロントエンドにアクセスします。API リクエストは API Gateway を経由して Lambda 関数 (認証、ユーザー、コンテンツ) に送信され、そこから DynamoDB テーブルへのアクセスや Amazon Cognito による認証が行われます。**
 
