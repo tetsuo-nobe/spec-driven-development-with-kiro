@@ -327,8 +327,6 @@
 
    Kiro が DynamoDB のページ割りに関する特定のドキュメントを取得し、それをアプリケーションのコンテキストに適用する仕組みを確認します。
 
-1. MCP ログを検索します。IDE の下部にある [**Output**] タブで、ドロップダウンから [**Kiro - MCP Logs**] を選択します。ログエントリを確認して、Kiro と MCP サーバー間の通信を把握します。
-
    <i aria-hidden="true" class="far fa-comment" style="color:#008296"></i> **考察:** MCP サーバーにより、Kiro の機能が組み込みツールの枠を超えて拡張されます。次のタスクでは、MCP ツールとステアリングやドメインの専門知識がバンドルされたパワーをインストールします。これにより、手動で設定を行う必要がなくなります。
 
    <i aria-hidden="true" class="fas fa-info-circle" style="color:#007FAA"></i> **詳細:** Kiro での MCP サーバーの設定と使用の詳細については、[Kiro MCP ドキュメント](https://kiro.dev/docs/mcp/) を参照してください。
