@@ -25,37 +25,9 @@
 - 範囲を限定したツール権限と対象を絞ったシステムプロンプトを定義したカスタムサブエージェントを作成する。
 - **.kiro/** ディレクトリをチームオンボーディング用に整理して、Git にコミットする。
 
-### 技術知識の前提条件
-
-ラボ 1 (仕様駆動開発、ステアリングファイル、実行モード、Bugfix Spec (バグ修正スペック)) を完了する必要があります。Visual Studio Code などのコーディング IDE に精通していることは役に立ちますが、必須ではありません。AWS CDK の概念 (スタック、コンストラクト、cdk deploy) に関する基本的な知識があれば役立ちますが、必須ではありません。
-
-### アイコンキー
-
-このラボでは、さまざまな種類の手順と注記への注意を促すために各種アイコンが使用されています。各アイコンの目的を以下のリストで説明します。
-
-- <i aria-hidden="true" class="fas fa-exclamation-circle" style="color:#7C5AED"></i> **注意:** 特記事項または重要な情報を表す (この情報を読み忘れても、機器やデータに問題が発生するというわけではありませんが、特定のステップを繰り返す必要が生じる可能性があります)。
-- <i aria-hidden="true" class="far fa-comment" style="color:#008296"></i> **検討:** 自分の環境でコンセプトをどのように適用するかを考えたり、現在のトピックについて会話を始めたりするための小休止の機会です。
-- <i aria-hidden="true" class="fas fa-clipboard-check" style="color:#18ab4b"></i> **予想される出力:** コマンドまたは編集したファイルの出力を確認するために使用できるサンプル出力です。
-- <i aria-hidden="true" class="fas fa-info-circle" style="color:#007FAA"></i> **詳細はこちら:** 詳細情報が記載されている場所。
-- <i aria-hidden="true" class="fas fa-sticky-note" style="color:#563377"></i> **注:** ヒントや重要なガイダンス。
-- <i aria-hidden="true" class="far fa-thumbs-up" style="color:#008296"></i> **タスク完了:** ラボの結論またはまとめのポイントです。
-- <i aria-hidden="true" class="fas fa-exclamation-triangle" style="color:#DF2A5D"></i> **警告:** コマンドやプロセスの失敗に影響を与える可能性のある、元に戻せないアクション (一度設定したら変更できない設定の警告も含む)。
 
 <!--include:StartLabNoSS-->
 
-### ラボ環境
-
-次の図は、ラボ環境の基本的なアーキテクチャを示しています。
-
-<center>![ラボ環境を示す AWS アーキテクチャ図](images/Kiro-arch-diagram-cf.png)</center>
-
-**画像の説明: デベロッパーがウェブブラウザを介して、ファイアウォールで保護された VPC 内で実行されている Windows EC2 インスタンスの前面に配置されている Amazon CloudFront ディストリビューションに接続している様子を示す図。EC2 インスタンスは、NICE DCV (リモートデスクトップ) と Kiro IDE をホストしており、VPC は、すべてのアウトバウンドトラフィックを検査する AWS Network Firewall および DNS Firewall で保護されています。デベロッパーは、公的に信頼された TLS 証明書を提供する CloudFront を通じて HTTPS 経由で DCV セッションにアクセスします。**
-
-ラボ環境の主なリソースは次のとおりです。
-
-- AWS Network Firewall と DNS Firewall で保護されている **VPC**
-- Kiro IDE と NICE DCV がインストールされている **EC2 インスタンス** (Windows Server)
-- デベロッパーが公的に信頼された HTTPS 接続を通じて DCV リモートデスクトップに接続する、**Amazon CloudFront** ディストリビューション (マイクロブログアプリケーションの CloudFront ディストリビューションとは別)。
 
 ### マイクロブログアプリケーションのアーキテクチャ
 
@@ -73,41 +45,8 @@
 - ユーザー、投稿、いいね、コメント、フォローを格納する **Amazon DynamoDB** テーブル
 - 認証と認可のための **Amazon Cognito** ユーザープールとアイデンティティプール
 
-### このラボで使用するサービス
 
-#### Kiro
-
-Kiro は Visual Studio Code のオープンソースベースである Code OSS 上に構築されています。Kiro は、バイブコーディングを実行したり、Anthropic Claude Sonnet による仕様駆動型の開発のコーディング支援を受けられるエージェンティック IDE を提供します。Kiro は、モデルコンテキストプロトコル (MCP) サーバーに接続して専門知識を深めることができます。また、パワー、フック、カスタムサブエージェントをサポートしているため拡張性を備えています。
-
-#### Amazon EC2
-
-Amazon EC2 は Amazon Web Services (AWS) クラウド上でスケーラブルなコンピューティング容量を提供します。このラボでは、EC2 が、Kiro IDE を実行する Windows インスタンスをホストします。
-
-#### NICE DCV
-
-NICE DCV は、高性能のリモートディスプレイプロトコルです。これにより、あらゆるクラウドやデータセンターからあらゆるデバイスに、リモートデスクトップを安全に配信することができます。このラボでは、DCV を使用することで、Kiro IDE がインストールされている Windows デスクトップへブラウザ経由でアクセスすることができます。
-
-#### AWS CDK
-
-AWS Cloud Development Kit (CDK) は、クラウドインフラストラクチャをコードとして定義し、それを AWS CloudFormation でプロビジョニングするためのオープンソースのソフトウェア開発フレームワークです。このラボでは、CDK がサーバーレスバックエンドインフラストラクチャ (Lambda 関数、API Gateway、DynamoDB テーブル、Cognito) を定義し、デプロイスクリプトがビルドとデプロイのフロー全体を処理します。
-
-#### AWS Lambda
-
-AWS Lambda を使用すると、サーバーのプロビジョニングや管理を行わずにコードを実行できます。このラボでは、Lambda 関数がマイクロブログアプリケーションのバックエンドとして機能します。
-
-#### Amazon API Gateway
-
-Amazon API Gateway は、API を作成、公開、管理するためのフルマネージドサービスです。このラボでは、API Gateway がマイクロブログアプリケーションの REST API レイヤーを提供します。
-
-#### Amazon DynamoDB
-
-Amazon DynamoDB は、フルマネージド型の NoSQL データベースサービスです。このラボでは、DynamoDB でマイクロブログアプリケーションのデータが格納されます。
-
-#### Amazon Cognito
-
-Amazon Cognito は、ウェブおよびモバイルアプリケーションの認証、認可、ユーザー管理機能を提供します。このラボでは、Cognito がマイクロブログアプリケーションのユーザー登録、ログイン、セッション管理を処理します。
-
-### このラボで使用しない AWS サービス
+### ラボ操作の注意点
 
 このラボで使用する AWS サービスの機能は、ラボで必要なものに限定されています。このラボガイドで指定されていないサービスを使用したりアクションを実行したりすると、エラーが発生することがあります。
 
