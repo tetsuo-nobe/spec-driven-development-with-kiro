@@ -19,10 +19,11 @@ Kiro IDE に MCP サーバーを設定して使用します。
     - **既存の MCP サーバーの定義は残したまま、下記を追加してください。**
 
 ```
-    "time": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-time"]
-    }
+   "time": {
+     "command": "C:\\Program Files\\uv\\uvx.exe",
+     "args": ["mcp-server-time", "--local-timezone", "Asia/Tokyo"],
+     "disabled": false
+   }
 ```
 
 3. Kiro の左側で Kiro のアイコンをクリックし、「**MCP SERVERS**」セクションで `time` サーバーが表示され、接続状態（緑のアイコン）になることを確認します
@@ -37,7 +38,7 @@ Kiro IDE に MCP サーバーを設定して使用します。
 1. チャット欄に以下を入力して送信します:
 
 ```
-現在の東京の時刻を教えてください。
+MCP サーバーを使用して現在の東京の時刻を教えてください。
 ```
 
 2. Kiro が MCP サーバー（time ツール）を使用して時刻情報を取得するのを確認します
