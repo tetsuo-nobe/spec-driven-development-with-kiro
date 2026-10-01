@@ -287,8 +287,8 @@
 
 <i aria-hidden="true" class="fas fa-exclamation-circle" style="color:#7C5AED"></i> **注意**: このラボにおける Kiro とのすべてのやり取りに、以下のガイドラインが適用されます。
 
-- [**Waiting on your input**] プロンプトが表示されたら、必ず [**Trust**] を選択します。
-- 信頼レベルの選択を求められた場合は、必ず [**Base**] オプションを選択します。
+- [**Your approval is required to continue:**] プロンプトが表示されたら、[**Allow**] または [**Always allow**]を選択します。
+- [**Allow to**] では [**This workspace**] または [**All workspace**] を選択します。
 - Kiro がターミナルでコマンドを実行する場合は、実行が完了するまで待ってから続行します。
 - Kiro がブラウザタブを開いたら、アプリケーションをテストし、エラーがあればチャットで Kiro に報告します。
 - ポートが既に使用中であるという理由で、Kiro から別のポートの使用を求められた場合は、`yes` と回答します。
@@ -391,13 +391,9 @@ Kiro にタスク 1 を完了するように指示します。
 
 ### タスクフェーズの一般的なガイダンス
 
-<i aria-hidden="true" class="fas fa-exclamation-circle" style="color:#7C5AED"></i> **注意:** タスクの実行中、チャットパネルに [**Waiting on your input**] のプロンプトが表示されることがよくあります。
+- [**Your approval is required to continue:**] プロンプトが表示されたら、[**Allow**] または [**Always allow**]を選択します。
+- [**Allow to**] では [**This workspace**] または [**All workspace**] を選択します。
 
-- 必ず [**Trust**] をクリックしてください。
-- 信頼レベルの選択を求められた場合は、必ず [**Base**] オプションを選択します。
-- コマンドを信頼すると、ポップアップダイアログが表示されます。
-
-必要に応じて、[**Open Settings**] リンクをクリックします。これにより、[**Kiro Agent: Trusted Commands**] の最新リストが開き、信頼済みコマンドを手動で追加できます。ラボ開始前に、信頼済みコマンドの一部は既に登録されています。
 
 <i aria-hidden="true" class="fas fa-sticky-note" style="color:#563377"></i> **注**: Kiro がファイルを作成および編集している間、左側のパネルで <i aria-hidden="true" class="fas fa-file"></i> **File** アイコンをクリックすると、プロジェクト内のファイルを再び表示できます (EXPLORER ビュー)。 気象予報アプリの **src** フォルダを展開すると、Kiro が作成している React アプリのソースファイルが表示されます。
 
