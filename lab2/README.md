@@ -209,7 +209,7 @@
 
 1. [**CloudFormation**] に移動し、[**AppStack**] スタックを選択します。
 
-1. [**Outputs**] タブをクリックして、[**CloudFrontDomainName**] の値 (`https://` で始まる URL) を探します。
+1. [**出力**] タブをクリックして、[**CloudFrontDomainName**] の値 (`https://` で始まる URL) を探します。
 
 1. URL をコピーして、新しいブラウザタブで開きます。
 
