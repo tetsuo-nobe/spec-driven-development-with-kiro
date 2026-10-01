@@ -369,7 +369,6 @@ Kiro IDE で新しいタブが開き、**Build AWS infrastructure with CDK and C
 
    - Kiro パネルを開き、[**MCP servers**] タブに移動します。
    - パワーに関連付けられたサーバーの接続ステータスインジケーターを確認します。
-   - Kiro で [**Output**] パネルを開き、[**Kiro - MCP Logs**] を選択すると、エラーや読み込みの成功ログが表示されます。
 
    <i aria-hidden="true" class="fas fa-sticky-note" style="color:#563377"></i> **注:** インストール後にパワーの MCP サーバーに接続エラーが表示される場合は、[**MCP SERVERS**] セクションを開いて、エラーが発生しているサーバーの [**Retry**] を選択します。パッケージのダウンロード中に、初回の接続試行がタイムアウトすることがあります。
 
