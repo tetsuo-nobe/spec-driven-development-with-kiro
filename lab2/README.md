@@ -260,8 +260,9 @@
 
 このタスクでは、Kiro が外部ツールに接続する仕組みを理解できるよう、MCP サーバーを手動で設定します。この手動によるアプローチは、タスク 4 で行うパワーベースのアプローチとは対照的です。
 
->[!NOTE] このラボ全体で Kiro と連携
-><i aria-hidden="true" class="fas fa-exclamation-circle" style="color:#7C5AED"></i> **注意**: このラボにおける Kiro とのすべてのやり取りに、以下のガイドラインが適用されます。
+>[!NOTE]
+> このラボ全体で Kiro と連携
+> <i aria-hidden="true" class="fas fa-exclamation-circle" style="color:#7C5AED"></i> **注意**: このラボにおける Kiro とのすべてのやり取りに、以下のガイドラインが適用されます。
 >
 > - コマンドやツールの使用の確認が求められた場合は、 [**Allow**] または [**Always allow**]を選択します。
 > - Kiro がターミナルでコマンドを実行する場合は、実行が完了するまで待ってから続行します。
