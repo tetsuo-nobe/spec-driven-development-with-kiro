@@ -429,6 +429,13 @@ Kiro IDE で新しいタブが開き、**Build AWS infrastructure with CDK and C
 
    このスクリプトはフロントエンドを構築して、それを S3 にアップロードし、CloudFront キャッシュを無効化します。1～2 分後、稼働中のアプリケーションに変更が反映されます。
 
+ 1. 今回はスクリプトでアプリケーションを更新しましたが、CDK による更新を行う場合はどうなるか Kiro にきいてみてください。
+
+    ```
+    今回の更新を C:\Users\student\environment\infrastructure\lib\app-stack.ts の CDK のコードを使って再デプロイすることはできますか？コードを分析したうえで回答して下さい。
+    ```
+    - **Kiro Powers** が使用されることを確認します。
+
    <i aria-hidden="true" class="fas fa-sticky-note" style="color:#563377"></i> **注:** マイクロブログアプリケーションで問題が発生した場合は、チャットで Kiro にエラーを共有し、問題のトラブルシューティングと修正を依頼します。
 
 <i aria-hidden="true" class="far fa-thumbs-up" style="color:#008296"></i> **タスク完了:** パワーをインストールし、それを使用してマイクロブログアプリケーションにフロントエンド機能を追加しました。
