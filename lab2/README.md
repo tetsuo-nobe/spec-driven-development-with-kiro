@@ -553,6 +553,7 @@ Kiro サブエージェントは、メインの Kiro エージェントがタス
 1. Git リポジトリを初期化し、完成した `.kiro/` 設定をコミットします。ターミナルを開き ([**View**] > [**Terminal**])、以下のコマンドを実行します。
 
    ```bash
+   cd c:\Users\student\environment
    git config --global user.email "labuser@example.com"
    git config --global user.name "Lab User"
    git init
