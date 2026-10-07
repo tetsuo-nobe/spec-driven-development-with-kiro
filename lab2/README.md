@@ -429,10 +429,10 @@ Kiro IDE で新しいタブが開き、**Build AWS infrastructure with CDK and C
 
    このスクリプトはフロントエンドを構築して、それを S3 にアップロードし、CloudFront キャッシュを無効化します。1～2 分後、稼働中のアプリケーションに変更が反映されます。
 
- 1. 今回はスクリプトでアプリケーションを更新しましたが、CDK による更新を行う場合はどうなるか Kiro にきいてみてください。
+ 1. 今回はフロントエンド部分の修正だけでしたが、バックエンドをデプロイするための CDK コードについて下記のように Kiro にきいてみましょう。
 
     ```
-    今回の更新を C:\Users\student\environment\infrastructure\lib\app-stack.ts の CDK のコードを使って再デプロイすることはできますか？コードを分析したうえで回答して下さい。
+    C:\Users\student\environment\infrastructure\lib\app-stack.ts の CDK のコードを分析してください。
     ```
     - **Kiro Powers** が使用されることを確認します。
 
