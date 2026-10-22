@@ -316,7 +316,7 @@
 
    [**新機能の構築 (Build a Feature)**] か [**バグ修正 (Fix a Bug)**] かを選択するよう求めるプロンプトが表示されたら、[**新機能の構築 (Build a Feature)**] を選択し、[**Submit answer**] をクリックします。
 
-   “**What do you want to start with?**” (何から始めますか) というプロンプトが表示されたら、[**Requirements**] をクリックし、[**Submit answer**] をクリックします。
+   “**何から始めますか？ (What do you want to start with?)**”  というプロンプトが表示されたら、[**要件定義 (Requirements)**] をクリックし、[**Submit answer**] をクリックします。
 
    Kiro が作業を開始し、**requirements.md** ファイルを生成します。
 
