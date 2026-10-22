@@ -314,7 +314,7 @@
 
    <i aria-hidden="true" class="fas fa-sticky-note" style="color:#563377"></i> **注:** このラボでは、アメリカ国立気象局 (US National Weather Service) の API を使用します。なぜなら、この API は無料で API キーの登録が不要であり、すべての受講者が一貫性のある再現可能な結果を得ることができるためです。後ほどアプリをテストする際には、米国の都市名 (Boston, Chicago, Huston など) を使用してください。
 
-   [**Build a Feature**] か [**Fix a Bug**] かを選択するよう求めるプロンプトが表示されたら、[**Build a Feature**] を選択し、[**Submit answer**] をクリックします。
+   [**新機能の構築 (Build a Feature)**] か [**バグ修正 (Fix a Bug)**] かを選択するよう求めるプロンプトが表示されたら、[**新機能の構築 (Build a Feature)**] を選択し、[**Submit answer**] をクリックします。
 
    “**What do you want to start with?**” (何から始めますか) というプロンプトが表示されたら、[**Requirements**] をクリックし、[**Submit answer**] をクリックします。
 
