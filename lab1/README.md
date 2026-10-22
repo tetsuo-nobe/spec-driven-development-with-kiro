@@ -192,7 +192,7 @@
 
    - [**Search settings**] テキストボックスで `default terminal Windows` を検索します。
 
-   - ドロップダウンメニューで、[**Terminal] > [Integrated] > [Default Profile: Windows**] を [**Command Prompt**] に設定します。
+   - [**Terminal] > [Integrated] > [Default Profile: Windows**] のドロップダウンメニューで [**Command Prompt**] を選択します。
 
       <i aria-hidden="true" class="fas fa-sticky-note" style="color:#563377"></i> **注:** これにより、Kiro はこのラボの後半でターミナルで実行されるコマンドの結果を読み取ることができます。
 
