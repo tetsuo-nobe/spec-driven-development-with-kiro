@@ -206,5 +206,5 @@ calculator.js の全ての関数に JSDoc コメントを追加してくださ�
 | 症状 | 対処 |
 |------|------|
 | Agent フック が動作しない | `.kiro/hooks/` 内の JSON ファイルの構文を確認。Kiro を再起動してみる。|
-| Agent Skills が表示されない | `.kiro/skills/` 内のファイルパスとフロントマターの `inclusion` 設定を確認 |
+| Agent Skills が表示されない | `.kiro/skills/` 内のファイルパスの確認 |
 
